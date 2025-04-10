@@ -1,0 +1,7 @@
+databaseChangeLog:
+  - include:
+      file: db/changelog/V1__01_create_tables.yml
+  - include:
+      file: db/changelog/V1__02_add_books.yml
+  - include:
+      file: db/changelog/V1__03_add_users.yml

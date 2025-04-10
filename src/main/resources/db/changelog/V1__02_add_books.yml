@@ -1,0 +1,19 @@
+databaseChangeLog:
+    - changeSet:
+          id: addBooks
+          author: Maksim Kopylov
+          changes:
+              - sql:
+                    sql: |
+                        INSERT INTO book (vendor_code, title, year, brand, stock, price)
+                        VALUES
+                            ('VC001', 'The Lord of the Rings: The Fellowship of the Ring', 1954, 'J.R.R. Tolkien', 50, 19.99),
+                            ('VC002', 'The Hobbit', 1937, 'J.R.R. Tolkien', 75, 14.99),
+                            ('VC003', 'The Lord of the Rings: The Two Towers', 1954, 'J.R.R. Tolkien', 60, 21.50),
+                            ('VC004', 'Pride and Prejudice', 1813, 'Jane Austen', 40, 12.75),
+                            ('VC005', 'Sense and Sensibility', 1811, 'Jane Austen', 35, 11.20),
+                            ('VC006', 'Emma', 1815, 'Jane Austen', 45, 13.50),
+                            ('VC007', '1984', 1949, 'George Orwell', 80, 16.00),
+                            ('VC008', 'Animal Farm', 1945, 'George Orwell', 65, 9.99),
+                            ('VC009', 'The Great Gatsby', 1925, 'F. Scott Fitzgerald', 55, 18.25),
+                            ('VC010', 'The Great Gatsby', 1925, 'Another Publisher', 30, 20.00);

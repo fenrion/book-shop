@@ -1,0 +1,11 @@
+databaseChangeLog:
+  - changeSet:
+      id: insert-initial-users-sql
+      author: Maksim Kopylov
+      changes:
+        - sql:
+            sql: |
+              INSERT INTO users (name, password)
+              VALUES
+                  ('admin', 'admin123'),
+                  ('user1', 'password123');
